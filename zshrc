@@ -94,10 +94,10 @@ if [ ! $TERM = dumb  ]; then
     # https://github.com/zsh-users/zsh-completions
     zgen load zsh-users/zsh-completions src
     zgen load zsh-users/zsh-syntax-highlighting
+    zgen load zsh-users/zsh-autosuggestions
     zgen load chrissicool/zsh-256color 
 
-
-
+    
 
     # you may also wish to bind it to some keys...
     # zgen load jimmijj/zsh-syntax-highlighting
@@ -113,8 +113,8 @@ if [ ! $TERM = dumb  ]; then
     # To accept the autosuggestion (replacing the command line contents), hit End, Alt+F, Ctrl+F, or any other key that moves the cursor to the right
 
 
-    zgen oh-my-zsh themes/takashiyoshida
-    ZSH_THEME= "takashiyoshida"
+    zgen oh-my-zsh themes/robbyrussell
+    ZSH_THEME= "robbyrussell"
     zgen save
   fi
 
@@ -147,3 +147,5 @@ fi
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
