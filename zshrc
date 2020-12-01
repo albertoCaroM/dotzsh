@@ -113,8 +113,12 @@ if [ ! $TERM = dumb  ]; then
     # To accept the autosuggestion (replacing the command line contents), hit End, Alt+F, Ctrl+F, or any other key that moves the cursor to the right
 
 
-    zgen oh-my-zsh themes/robbyrussell
-    ZSH_THEME= "robbyrussell"
+    if [ -f ~/.zshrc.theme  ] ; then
+      source ~/.zshrc.theme
+    else
+      zgen oh-my-zsh themes/robbyrussell
+      ZSH_THEME= "robbyrussell"
+    fi
     zgen save
   fi
 

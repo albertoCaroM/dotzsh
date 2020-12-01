@@ -1,0 +1,4 @@
+zgen oh-my-zsh themes/crunch
+export ZSH_THEME="crunch"
+
+

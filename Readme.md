@@ -1,4 +1,4 @@
-# INSTRUCTIONS
+[#](#) INSTRUCTIONS
 
 choose auto or manual configuration no both.
 
@@ -26,6 +26,23 @@ if  you have linked before ~/.dotzsh/zshrc and ~/.zshrc, you must run:  sed '$d'
   cp ~/.dotzsh/machinerc ~/.machinerc
 ~~~
 Now edit and customize ~/.machinerc
+
+
+### change theme
+
+For changing theme create a file called ~/.zshrc.theme with the desired configuration, and in new shell execute "zgen update"
+this file will be read at starting:
+
+
+```
+#example ~/.zshrc.theme
+zgen oh-my-zsh themes/crunch
+export ZSH_THEME="crunch"
+```
+
+
+
+
 
 
 ### link ~/.dotzsh/zshrc
