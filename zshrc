@@ -81,6 +81,12 @@ if [ ! $TERM = dumb  ]; then
     zgen oh-my-zsh plugins/gitignore
     zgen oh-my-zsh plugins/sudo
     zgen oh-my-zsh plugins/dirhistory
+    zgen oh-my-zsh plugins/aws
+    zgen oh-my-zsh plugins/kubectl
+    zgen oh-my-zsh plugins/kubectx
+    zgen oh-my-zsh plugins/kube-ps1
+    zgen oh-my-zsh plugins/minikube
+    
 #    zgen oh-my-zsh plugins/command-not-found
     zgen oh-my-zsh plugins/tmux
     zgen oh-my-zsh plugins/tmuxinator
@@ -139,6 +145,11 @@ setopt appendhistory
 setopt sharehistory
 setopt incappendhistory
 
+
+
+alias open="xdg-open "
+#kubectl ps1 
+PROMPT='$(kube_ps1)'$PROMPT
 
 
 # CTRL-T CTRL-R ALT-T with steroids
