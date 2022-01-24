@@ -72,6 +72,8 @@ if [ ! $TERM = dumb  ]; then
 
     # list of plugins from zsh I use
     # see https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
+    #
+    zgen oh-my-zsh themes/robbyrussell
     zgen oh-my-zsh plugins/docker
     zgen oh-my-zsh plugins/git
     zgen oh-my-zsh plugins/gitfast
@@ -122,7 +124,6 @@ if [ ! $TERM = dumb  ]; then
     if [ -f ~/.zshrc.theme  ] ; then
       source ~/.zshrc.theme
     else
-      zgen oh-my-zsh themes/robbyrussell
       ZSH_THEME= "robbyrussell"
     fi
     zgen save
@@ -164,3 +165,6 @@ fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform
