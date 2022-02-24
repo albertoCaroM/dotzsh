@@ -88,6 +88,7 @@ if [ ! $TERM = dumb  ]; then
     zgen oh-my-zsh plugins/kubectx
     zgen oh-my-zsh plugins/kube-ps1
     zgen oh-my-zsh plugins/minikube
+    zgen oh-my-zsh plugins/helm
     
 #    zgen oh-my-zsh plugins/command-not-found
     zgen oh-my-zsh plugins/tmux
